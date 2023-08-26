@@ -1,0 +1,135 @@
+html {
+    padding: 20px;
+    background: lightslategray;
+    transition: 1s ease-in-out;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    border-right-width: 2px;
+    transition: 1s ease-in-out;
+}
+
+main {
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+
+}
+
+header {
+    text-align: center;
+    margin: 10px;
+    margin: 0 auto;
+    background: lightcoral;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+    margin-bottom: 30px;
+
+}
+
+header h1 {
+    font-weight: 700;
+    background: white;
+    border-radius: 20px;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 40px;
+
+}
+
+.container-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+.center{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.size200400 {
+    min-width: 100px;
+    max-width: 300px;
+    width: 100%;
+
+}
+
+.size50100 {
+    min-width: 100px;
+    max-width: 300px;
+    width: 100%;
+
+}
+
+.input {
+    border-radius: 5px;
+    border-width: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.box100{
+    width: 100px;
+}
+
+.initial-data__date, .final-data__date{
+    margin-bottom: 20px;
+}
+
+.initial-data {
+    background: lightgreen;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+    flex: 1;
+}
+
+.initial-data h2 {
+    font-weight: 700;
+    background: white;
+    border-radius: 20px;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.final-data h2 {
+    font-weight: 700;
+    background: white;
+    border-radius: 20px;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.final-data {
+    background: lightgrey;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+    flex: 1;
+}

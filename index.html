@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>DS</title>
+</head>
+<body>
+    <header>
+        <h1>REPORT OF WEIGHT - DRAFT SURVEY</h1>
+        <div class="container-flex wrap">
+            <div class="container-flex size100300">
+                <p class="size100300">Vessel Name:</p>
+                <input class="vessel-name__input input"></input>
+            </div>
+            <div class="container-flex size100300">
+                <p class="size100300">Port Name:</p>
+                <input class="port-name__input input"></input>
+            </div>
+            <div class="container-flex size100300">
+                <p class="size100300">Cargo Name:</p>
+                <input class="cargo-name__input input"></input>
+            </div>
+        </div>
+    </header>
+    <main class="container-flex wrap"> 
+        <div class="initial-data">
+            <h2>Initial Calculation</h2>
+            <div class="initial-data__date container-flex size100300">
+                <p class="size100300">Date:</p>
+                <input type="date" class="initial-data__date-input input"></input>
+            </div>
+            <div class="initial-data__drafts">
+                <div class="container-flex center">
+                    <p class="size50100 center box100"></p>
+                    <p class="size50100 center">Df</p>
+                    <p class="size50100 center">Dm</p>
+                    <p class="size50100 center">Da</p>
+                </div>
+                <div class="initial-data__drafts container-flex center">
+                    <p class="size50100 center">Port</p>
+                    <input type="number" step="0.001" class="initial-data__drafts-Df-input size50100 input"></input>
+                    <input type="number" step="0.001" class="initial-data__drafts-Dm-input size50100 input"></input>
+                    <input type="number" step="0.001" class="initial-data__drafts-Da-input size50100 input"></input>
+                </div>
+            </div>
+        </div>
+        <div class="final-data">
+            <h2>Final Calculation</h2>
+            <div class="initial-data__date container-flex size100300">
+                <p class="size100300">Date:</p>
+                <input type="date" class="final-data__date-input input"></input>
+            </div>
+            <div class="final-data__drafts">
+                <div class="container-flex center">
+                    <p class="size50100 center box100"></p>
+                    <p class="size50100 center">Df</p>
+                    <p class="size50100 center">Dm</p>
+                    <p class="size50100 center">Da</p>
+                </div>
+                <div class="final-data__drafts container-flex center">
+                    <p class="size50100 center">Port</p>
+                    <input type="number" step="0.001" class="final-data__drafts-Df-input size50100 input"></input>
+                    <input type="number" step="0.001" class="final-data__drafts-Dm-input size50100 input"></input>
+                    <input type="number" step="0.001" class="final-data__drafts-Da-input size50100 input"></input>
+                </div>
+            </div>
+        
+        </div>  
+    </main>
+    <footer></footer>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
