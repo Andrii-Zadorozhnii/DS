@@ -25,6 +25,7 @@
             </div>
         </div>
     </header>
+    <!-- <style type="text/css"></style> -->
     <main class="container-flex wrap"> 
         <div class="initial-data">
             <h2>Initial Calculation</h2>
@@ -41,10 +42,26 @@
                 </div>
                 <div class="initial-data__drafts container-flex center">
                     <p class="size50100 center">Port</p>
-                    <input type="number" step="0.001" class="initial-data__drafts-Df-input size50100 input"></input>
-                    <input type="number" step="0.001" class="initial-data__drafts-Dm-input size50100 input"></input>
-                    <input type="number" step="0.001" class="initial-data__drafts-Da-input size50100 input"></input>
+                    <input type="number" step="0.001" class="initial-data__drafts-Port-Df-input size50100 input"></input>
+                    <input type="number" step="0.001" class="initial-data__drafts-Port-Dm-input size50100 input"></input>
+                    <input type="number" step="0.001" class="initial-data__drafts-Port-Da-input size50100 input"></input>
                 </div>
+                <div class="initial-data__drafts container-flex center">
+                    <p class="size50100 center">Stbd</p>
+                    <input type="number" step="0.001" class="initial-data__drafts-Stbd-Df-input size50100 input"></input>
+                    <input type="number" step="0.001" class="initial-data__drafts-Stbd-Dm-input size50100 input"></input>
+                    <input type="number" step="0.001" class="initial-data__drafts-Stbd-Da-input size50100 input"></input>
+                </div>
+                <div class="container-flex center">
+                    <p class="size200400 center box100">Mean</p>
+                    <p class="initial-data__drafts-Mean-Df size50100 center"></p>
+                    <p class="initial-data__drafts-Mean-Dm size50100 center"></p>
+                    <p class="initial-data__drafts-Mean-Da size50100 center"></p>
+                </div>
+            </div>
+            <div class="initial-data__density container-flex size100300">
+                <p class="size100300">Density:</p>
+                <input type="number"  step="0.0005" class="initial-data__density-input input"></input>
             </div>
         </div>
         <div class="final-data">
@@ -62,16 +79,32 @@
                 </div>
                 <div class="final-data__drafts container-flex center">
                     <p class="size50100 center">Port</p>
-                    <input type="number" step="0.001" class="final-data__drafts-Df-input size50100 input"></input>
-                    <input type="number" step="0.001" class="final-data__drafts-Dm-input size50100 input"></input>
-                    <input type="number" step="0.001" class="final-data__drafts-Da-input size50100 input"></input>
+                    <input type="number" step="0.001" class="final-data__drafts-Port-Df-input size50100 input"></input>
+                    <input type="number" step="0.001" class="final-data__drafts-Port-Dm-input size50100 input"></input>
+                    <input type="number" step="0.001" class="final-data__drafts-Port-Da-input size50100 input"></input>
+                </div>
+                <div class="final-data__drafts container-flex center">
+                    <p class="size50100 center">Stbd</p>
+                    <input type="number" step="0.001" class="final-data__drafts-Stbd-Df-input size50100 input"></input>
+                    <input type="number" step="0.001" class="final-data__drafts-Stbd-Dm-input size50100 input"></input>
+                    <input type="number" step="0.001" class="final-data__drafts-Stbd-Da-input size50100 input"></input>
+                </div>
+                <div class="container-flex center">
+                    <p class="size50100 center box100">Mean</p>
+                    <p class="final-data__drafts-Mean-Df size50100 center"></p>
+                    <p class="final-data__drafts-Mean-Dm size50100 center"></p>
+                    <p class="final-data__drafts-Mean-Da size50100 center"></p>
+                </div>
+                <div class="final-data__density container-flex size100300">
+                    <p class="size100300">Density:</p>
+                    <input type="number"  step="0.0005" class="final-data__density-input input"></input>
                 </div>
             </div>
         
         </div>  
     </main>
     <footer></footer>
-    
+    <!-- <script type="text/javascript"></script> -->
     <script src="./index.js"></script>
 </body>
 </html>
