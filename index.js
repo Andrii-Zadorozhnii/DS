@@ -37,6 +37,7 @@ let initialWaterDensity = document.querySelector('.initial-data__density-input')
 let finalWaterDensity = document.querySelector('.final-data__density-input');
 
 
+
 function MeanDraftCalculation(PortDraft, StbdDraft) {
     let meanDraft = (PortDraft + StbdDraft) / 2;
     return meanDraft;
@@ -153,6 +154,15 @@ finalDraftStbdAft.addEventListener('input', () => {
     localStorage.setItem('finalMeanDraftAft', meanDraft.toFixed(3));
 });
 
+// Water density
+
+initialWaterDensity.addEventListener('input', () => {
+    localStorage.setItem('initialWaterDensity', initialWaterDensity.value);
+});
+finalWaterDensity.addEventListener('input', () => {
+    localStorage.setItem('finalWaterDensity', finalWaterDensity.value);
+});
+
 
 
 
@@ -180,10 +190,13 @@ finalDraftStbdForward.value = localStorage.getItem('finalDraftStbdForward') || '
 finalDraftStbdMiddle.value = localStorage.getItem('finalDraftStbdMiddle') || '';
 finalDraftStbdAft.value = localStorage.getItem('finalDraftStbdAft') || '';
 
-initialDraftMeanForward.value.textContent = localStorage.getItem('initialMeanDraftPortForward') || '';
-initialDraftMeanMiddle.value.textContent = localStorage.getItem('initialMeanDraftPortMiddle') || '';
-initialDraftMeanAft.value.textContent = localStorage.getItem('initialMeanDraftPortAft') || '';
+initialDraftMeanForward.value = localStorage.getItem('initialMeanDraftPortForward') || '';
+initialDraftMeanMiddle.value = localStorage.getItem('initialMeanDraftPortMiddle') || '';
+initialDraftMeanAft.value = localStorage.getItem('initialMeanDraftPortAft') || '';
 
-finalDraftMeanForward.value.textContent = localStorage.getItem('finaMeanDraftPortForward') || '';
-finalDraftMeanMiddle.value.textContent = localStorage.getItem('finaMeanDraftPortMiddle') || '';
-finalDraftMeanAft.value.textContent = localStorage.getItem('finaMeanDraftPortAft') || '';
+finalDraftMeanForward.value = localStorage.getItem('finaMeanDraftPortForward') || '';
+finalDraftMeanMiddle.value = localStorage.getItem('finaMeanDraftPortMiddle') || '';
+finalDraftMeanAft.value = localStorage.getItem('finaMeanDraftPortAft') || '';
+
+initialWaterDensity.value = localStorage.getItem('initialWaterDensity') || '';
+finalWaterDensity.value = localStorage.getItem('finalWaterDensity') || '';
