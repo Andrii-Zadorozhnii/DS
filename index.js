@@ -36,6 +36,10 @@ let finalDraftMeanAft = document.querySelector(".final-data__drafts-Mean-Da");
 let initialWaterDensity = document.querySelector('.initial-data__density-input');
 let finalWaterDensity = document.querySelector('.final-data__density-input');
 
+//TBM
+
+let initialTBM = document.querySelector('.initial-data__trim-BTM');
+let finalTBM = document.querySelector('.final-data__trim-BTM');
 
 
 function MeanDraftCalculation(PortDraft, StbdDraft) {
@@ -71,6 +75,8 @@ initialDraftPortForward.addEventListener('input', () => {
     let meanDraft = MeanDraftCalculation(parseFloat(initialDraftPortForward.value), parseFloat(initialDraftStbdForward.value));
     initialDraftMeanForward.textContent = meanDraft.toFixed(3);
     localStorage.setItem('initialMeanDraftForward', meanDraft.toFixed(3));
+    let tbm = (localStorage.getItem('initialMeanDraftAft')-(localStorage.getItem('initialMeanDraftForward')));
+    initialTBM.textContent = tbm.toFixed(3);
 });
 
 initialDraftPortMiddle.addEventListener('input', () => {
@@ -78,6 +84,7 @@ initialDraftPortMiddle.addEventListener('input', () => {
     let meanDraft = MeanDraftCalculation(parseFloat(initialDraftPortMiddle.value), parseFloat(initialDraftStbdMiddle.value));
     initialDraftMeanMiddle.textContent = meanDraft.toFixed(3);
     localStorage.setItem('initialMeanDraftMiddle', meanDraft.toFixed(3));
+
 });
 
 initialDraftPortAft.addEventListener('input', () => {
@@ -85,6 +92,8 @@ initialDraftPortAft.addEventListener('input', () => {
     let meanDraft = MeanDraftCalculation(parseFloat(initialDraftPortAft.value), parseFloat(initialDraftStbdAft.value));
     initialDraftMeanAft.textContent = meanDraft.toFixed(3);
     localStorage.setItem('initialMeanDraftAft', meanDraft.toFixed(3));
+    let tbm = (localStorage.getItem('initialMeanDraftAft')-(localStorage.getItem('initialMeanDraftForward')));
+    initialTBM.textContent = tbm.toFixed(3);
 });
 
 
@@ -93,6 +102,8 @@ initialDraftStbdForward.addEventListener('input', () => {
     let meanDraft = MeanDraftCalculation(parseFloat(initialDraftPortForward.value), parseFloat(initialDraftStbdForward.value));
     initialDraftMeanForward.textContent = meanDraft.toFixed(3);
     localStorage.setItem('initialMeanDraftForward', meanDraft.toFixed(3));
+    let tbm = (localStorage.getItem('initialMeanDraftAft')-(localStorage.getItem('initialMeanDraftForward')));
+    initialTBM.textContent = tbm.toFixed(3);
 });
 
 initialDraftStbdMiddle.addEventListener('input', () => {
@@ -107,6 +118,8 @@ initialDraftStbdAft.addEventListener('input', () => {
     let meanDraft = MeanDraftCalculation(parseFloat(initialDraftPortAft.value), parseFloat(initialDraftStbdAft.value));
     initialDraftMeanAft.textContent = meanDraft.toFixed(3);
     localStorage.setItem('initialMeanDraftAft', meanDraft.toFixed(3));
+    let tbm = (localStorage.getItem('initialMeanDraftAft')-(localStorage.getItem('initialMeanDraftForward')));
+    initialTBM.textContent = tbm.toFixed(3);
 });
 
 // Final Drafts
@@ -162,6 +175,9 @@ initialWaterDensity.addEventListener('input', () => {
 finalWaterDensity.addEventListener('input', () => {
     localStorage.setItem('finalWaterDensity', finalWaterDensity.value);
 });
+
+// TBM
+
 
 
 
