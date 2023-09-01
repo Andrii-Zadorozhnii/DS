@@ -214,5 +214,15 @@ finalDraftMeanForward.value = localStorage.getItem('finaMeanDraftPortForward') |
 finalDraftMeanMiddle.value = localStorage.getItem('finaMeanDraftPortMiddle') || '';
 finalDraftMeanAft.value = localStorage.getItem('finaMeanDraftPortAft') || '';
 
+finalDraftMeanAft.textContent = localStorage.getItem('finalMeanDraftAft') || '';
+finalDraftMeanForward.textContent = localStorage.getItem('finalMeanDraftForward') || '';
+finalDraftMeanMiddle.textContent = localStorage.getItem('finalMeanDraftMiddle') || '';
+
+initialDraftMeanAft.textContent = localStorage.getItem('initialMeanDraftAft') || '';
+initialDraftMeanForward.textContent = localStorage.getItem('initialMeanDraftForward') || '';
+initialDraftMeanMiddle.textContent = localStorage.getItem('initialMeanDraftMiddle') || '';
+
+
+
 initialWaterDensity.value = localStorage.getItem('initialWaterDensity') || '';
 finalWaterDensity.value = localStorage.getItem('finalWaterDensity') || '';
